@@ -24,34 +24,34 @@ public class Main {
         policeman.shoot();
         System.out.println(inrName);
 
-        hit.IsHeard();
+        hit.isHeard();
         System.out.println(hit.getName());
 
         System.out.print(rocket.getName());
-        rocket.Shake();
+        rocket.shake();
         System.out.print(rocket.getName());
-        rocket.LoseControl();
+        rocket.loseControl();
         System.out.println(controlName);
         System.out.print(rocket.getName());
-        rocket.RollOver();
+        rocket.rollOver();
         System.out.println(inairName);
 
         System.out.print(bullet.getName());
-        bullet.NoPunch();
+        bullet.noPunch();
         System.out.println(steelName);
 
         System.out.print(rocket.getName());
         rocket.weightlessness();
 
         System.out.print(hit.getName());
-        hit.Was();
+        hit.was();
         System.out.println(feelName);
 
         System.out.print(pathName + cosmonaut.getName() + "ы ");
         cosmonaut.fall();
         System.out.println(placeName);
 
-        confusion.Happen();
+        confusion.happen();
         System.out.print(confusion.getName());
     }
 }

@@ -1,6 +1,6 @@
 public interface IRocket {
-    void Shake();
-    void LoseControl();
-    void RollOver();
+    void shake();
+    void loseControl();
+    void rollOver();
     void weightlessness();
 }

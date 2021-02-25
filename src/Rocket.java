@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Rocket implements IRocket {
     private String Name;
     public void setName(String name) {
@@ -7,19 +9,40 @@ public class Rocket implements IRocket {
         return this.Name;
     }
 
-    public void Shake(){
+    public void shake(){
         System.out.println(" вздрогнула");
     }
 
-    public void LoseControl(){
+    public void loseControl(){
         System.out.print(" потеряла");
     }
 
-    public void RollOver(){
+    public void rollOver(){
         System.out.print(" перевернулась");
     }
 
     public void weightlessness(){
         System.out.println(" находилась в состоянии невесомости");
+    }
+
+    public boolean equals(Object obj) {
+        if (obj != null && obj.getClass() == this.getClass()) {
+            if (this == obj) {
+                return true;
+            } else {
+                Rocket other = (Rocket) obj;
+                return Objects.equals(this.Name, other.Name);
+            }
+        } else {
+            return false;
+        }
+    }
+
+    public int hashCode() {
+        return Objects.hash(new Object[]{this.Name});
+    }
+
+    public String toString() {
+        return this.Name;
     }
 }

@@ -1,17 +1,17 @@
 import java.util.Objects;
 
 public abstract class Human {
-    private String Name;
+    private String name;
 
     public Human() {
     }
 
     public void setName(String name) {
-        this.Name = name;
+        this.name = name;
     }
 
     public String getName() {
-        return this.Name;
+        return this.name;
     }
 
     protected void shoot() {
@@ -26,7 +26,7 @@ public abstract class Human {
                 return true;
             } else {
                 Human other = (Human)obj;
-                return Objects.equals(this.Name, other.Name);
+                return Objects.equals(this.name, other.name);
             }
         } else {
             return false;
@@ -34,10 +34,10 @@ public abstract class Human {
     }
 
     public int hashCode() {
-        return Objects.hash(new Object[]{this.Name});
+        return Objects.hash(new Object[]{this.name});
     }
 
     public String toString() {
-        return this.Name;
+        return this.name;
     }
 }

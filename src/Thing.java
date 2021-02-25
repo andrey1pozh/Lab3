@@ -14,10 +14,10 @@ public abstract class Thing {
         return this.Name;
     }
 
-    protected void NoPunch() {
+    protected void noPunch() {
     }
 
-    protected void Happen() {
+    protected void happen() {
     }
 
     public boolean equals(Object obj) {
