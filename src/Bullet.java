@@ -7,9 +7,9 @@ public class Bullet extends Thing{
         setName(name);
     }
 
-    protected void noPunch(){
+    /*protected void noPunch(){
         System.out.print(" не пробила");
-    }
+    }*/
 
     public boolean equals(Object obj) {
         if (obj != null && obj.getClass() == this.getClass()) {

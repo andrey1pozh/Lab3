@@ -9,6 +9,7 @@ public class Confusion extends Thing{
     protected void happen(){
         System.out.print("Произошло ");
     }
+
     public boolean equals(Object obj) {
         if (obj != null && obj.getClass() == this.getClass()) {
             if (this == obj) {
