@@ -1,10 +1,23 @@
 import java.util.Objects;
 
 public class Rocket implements IRocket {
+    private static int HP = 100;
     private String Name;
+
+    public static void hpBar(String Material){
+        if (Material.equals("steal")){
+            System.out.print(" не пробила");
+        }
+        else{
+            HP -= 20;
+            System.out.print(" пробила");
+        }
+    }
+
     public void setName(String name) {
         this.Name = name;
     }
+
     public String getName() {
         return this.Name;
     }

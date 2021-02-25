@@ -19,6 +19,7 @@ public class Main {
         Cosmonaut cosmonaut = new Cosmonaut("космонавт");
         Confusion confusion = new Confusion("замешательство");
 
+
         System.out.print(timeName);
         System.out.print(policeman.getName());
         policeman.shoot();
@@ -37,7 +38,8 @@ public class Main {
         System.out.println(inairName);
 
         System.out.print(bullet.getName());
-        bullet.noPunch();
+        Rocket.hpBar("steal");
+        //bullet.noPunch();
         System.out.println(steelName);
 
         System.out.print(rocket.getName());
