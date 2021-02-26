@@ -17,7 +17,7 @@ public abstract class Human {
     protected void shoot() {
     }
 
-    protected void fall() {
+    protected static void fall() {
     }
 
     public boolean equals(Object obj) {

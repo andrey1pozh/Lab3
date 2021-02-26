@@ -2,13 +2,19 @@ import java.util.Objects;
 
 public class Policeman extends Human {
     private String name;
+    private String description;
     public Policeman(String name) {
         setName(name);
     }
 
-    protected void shoot() {
-        System.out.print(" выстрелил");
+    public void setDescription(String description) {
+        this.description = description;
     }
+
+    protected void shoot() {
+        System.out.println(" выстрелил " + description);
+    }
+
     public boolean equals(Object obj) {
         if (obj != null && obj.getClass() == this.getClass()) {
             if (this == obj) {

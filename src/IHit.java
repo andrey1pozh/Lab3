@@ -1,5 +1,8 @@
 public interface IHit {
-    void isHeard();
+    static void isHeard() {
+
+    }
+
     void was();
 
 }

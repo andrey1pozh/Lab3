@@ -6,8 +6,13 @@ public class Cosmonaut extends Human {
         setName(name);
     }
 
-    protected void fall() {
-        System.out.print("упали");
+    protected static void fall(String event) {
+        if (event.equals("От внезапного изменения курса ")){
+            System.out.print("упали");
+        }
+        else {
+            System.out.print("едва не упали");
+        }
     }
     public boolean equals(Object obj) {
         if (obj != null && obj.getClass() == this.getClass()) {

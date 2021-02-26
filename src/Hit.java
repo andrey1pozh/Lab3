@@ -9,8 +9,14 @@ public class Hit implements IHit {
         return this.Name;
     }
 
-    public void isHeard(){
-        System.out.print("Послышался звонкий ");
+    public static void isHeard( Double chance ){
+        if (chance >= 50){
+            System.out.print("Послышался звонкий ");
+        }
+        else{
+            System.out.print("Послышался глухой ");
+        }
+
     }
     public void was(){
         System.out.print(" был");

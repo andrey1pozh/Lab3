@@ -1,8 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
+
         String timeName = Any.TIME.getName();
-        String inrName = Any.INR.getName();
+        //String inrName = Any.INR.getName();
         String controlName = Any.CONTROL.getName();
         String inairName = Any.INAIR.getName();
         String steelName = Any.STEEL.getName();
@@ -11,6 +12,7 @@ public class Main {
         String placeName = Any.PLACE.getName();
 
         Policeman policeman = new Policeman(" полицейский");
+        policeman.setDescription("в ракету");
         Hit hit = new Hit();
         hit.setName("удар");
         Rocket rocket = new Rocket();
@@ -23,9 +25,9 @@ public class Main {
         System.out.print(timeName);
         System.out.print(policeman.getName());
         policeman.shoot();
-        System.out.println(inrName);
+        //System.out.println(inrName);
 
-        hit.isHeard();
+        hit.isHeard(Math.random() * (100 - 0) + 0);
         System.out.println(hit.getName());
 
         System.out.print(rocket.getName());
@@ -50,7 +52,7 @@ public class Main {
         System.out.println(feelName);
 
         System.out.print(pathName + cosmonaut.getName() + "ы ");
-        cosmonaut.fall();
+        cosmonaut.fall(pathName);
         System.out.println(placeName);
 
         confusion.happen();
